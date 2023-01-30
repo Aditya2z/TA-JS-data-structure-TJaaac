@@ -30,6 +30,7 @@ console.log(students.length);// This will not check the length of object, instea
 
 // 11. Can you define a key of `let or var` in any object? Reason.
 //Yes, beacuse by default, object property names in JavaScript are strings. When you declare a property without quotes around the name, JavaScript will implicitly convert the name to a string.
+students['let'] = 'let';
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
 console.log(students);
