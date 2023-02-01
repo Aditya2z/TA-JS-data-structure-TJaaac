@@ -12,24 +12,26 @@ let newUser = user;
 1. Memory representation
 
 - Create the memory representation of the above snippet on notebook.
-- Take a photo/screenshot and add it to the folder `code`
+<!-- Instead of doing it on notebook, i did it computer -->
 
+- Take a photo/screenshot and add it to the folder `code`
 <!-- To add this image here use ![name](./hello.jpg) -->
+![name](./Untitled-2023-02-01-1219.png)`
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true and reason because of copy by refrence
+- `user === newUser;` // true and reason because of copy by refrence
+- `user.name === newUser.name;` // true and reason because of copy by refrence
+- `user.name == newUser.name;` //true and reason because of copy by refrence
+- `user.sibling == newUser.sibling;` // true and reason because of copy by refrence
+- `user.sibling === newUser.sibling;` // true and reason because of copy by refrence
+- `user.sibling == allBrothers;` // false
+- `user.sibling === allBrothers;` // false
+- `brothersCopy === allBrothers;` // false
+- `brothersCopy == allBrothers;` // false
+- `brothersCopy == user.sibling;` // true
+- `brothersCopy === user.sibling;` // true
+- `brothersCopy[0] === user.sibling[0];` // true
+- `brothersCopy[1] === user.sibling[1];` // true
+- `user.sibling[1] === newUser.sibling[1];` //true
